@@ -1,0 +1,51 @@
+{
+  "name": "socketshat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack -wd eval-source-map",
+    "dev": "babel-node src/server.js",
+    "db": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.0.3",
+    "sequelize-cli": "^6.6.1"
+  },
+  "dependencies": {
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
+    "axios": "^1.6.0",
+    "babel-loader": "^9.1.3",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "css-loader": "^6.8.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mini-css-extract-plugin": "^2.7.6",
+    "morgan": "^1.10.0",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.9.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.17.0",
+    "sequelize": "^6.33.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "ws": "^8.16.0"
+  }
+}
